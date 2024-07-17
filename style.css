@@ -1,0 +1,87 @@
+body,
+html {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    display: flex;
+    height: 12vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(39, 109, 69);
+    background: linear-gradient(90deg, rgba(39, 109, 69, 1) 0%, rgba(0, 240, 255, 1) 51%, rgba(39, 109, 69, 1) 100%);
+}
+
+.navlogo {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 1px black;
+    font-size: 1.1rem;
+    margin-left: 15px;
+}
+
+.navbutton {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 15px;
+
+    .navb {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        transition: all .3s ease;
+        &:hover{
+            color: rgb(0, 0, 0) ;
+            text-shadow: 1px 1px 3px grey;
+            transform: translateY(-5px);
+        }
+    }
+}
+#home{
+    height: 88vh;
+    width: 100vw;
+    display: flex;
+    .left{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .field{
+            height: 10%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+        }
+        .input{
+            width: 60%;
+            height: 100%;
+            border-radius: 20px;
+            font-size: large;
+        }
+        .submitb{
+            width: 60%;
+            height: 10%;
+            background-color: aqua;
+            &:hover{
+                background-color: rgb(9, 167, 164);
+            }
+        }
+    }
+    .right{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        background-image: url(./img/doctraine.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+}

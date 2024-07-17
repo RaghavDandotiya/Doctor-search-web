@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Doctor Registration</title>
+    <link rel="stylesheet" href="doc_reg.css">
+</head>
+
+<body>
+    <section class="registration-container">
+        <h2> Registration </h2>
+        <section class="details-section">
+            <form action="doc_reg.php" method="post" class="registration-form">
+                <!-- Personal Details Section -->
+                <h4> Personal Details </h4>
+                <section class="personal-details">
+                    <div class="three-details-item">
+                        <label for="name">
+                            <p>Full Name</p>
+                            <input type="text" name="name" id="name" placeholder="Enter your name">
+                        </label>
+                        <label for="age">
+                            <p>Enter Your Age</p>
+                            <input type="number" name="age" id="age" placeholder="Enter Your Age">
+                        </label>
+                    </div>
+
+                    <div class="three-details-item">
+                        
+                        <label for="aadharNo">
+                            <p>Enter Your Aadhar</p>
+                            <input type="text" name="aadhar" id="aadhar" placeholder="Enter aadhar number">
+                        </label>
+                        <label for="email">
+                            <p>Email</p>
+                            <input type="email" name="email" id="email" placeholder="Enter your email">
+                        </label>
+                        <label for="ph">
+                            <p> Mobile Number</p>
+                            <input type="tel" name="phone" id="ph" placeholder="Enter mobile number">
+                        </label>
+                    </div>
+                    
+                    <div class="three-details-item">
+
+                        <label for="gender">
+                            <p> Gender</p>
+                            <!-- <input type="text" name="gender" id="gender" placeholder="Enter your gender"> -->
+                            <select name="gender" id="gender">
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Trans">Trans</option>
+                                <option value="undefined">Rather Not Say</option>
+                            </select>
+                        </label>
+
+                        <label for="address">
+                            <p> Address </p>
+                            <input type="text" name="address" id="address" placeholder="Enter your Address">
+                        </label>
+                        <label for="country">
+                            <p> Country </p>
+                            <input type="text" name="country" id="country" placeholder="Enter your Country">
+                        </label>
+                    </div>
+                    <div class="three-details-item">
+                        
+                    <label for="state">
+                            <p> State </p>
+                            <input type="text" name="state" id="state" placeholder="Enter your State">
+                        </label>
+                        <label for="city">
+                            <p> City </p>
+                            <input type="text" name="city" id="city" placeholder="Enter your City">
+                        </label>
+                        <label for="Pincode">
+                            <p> Pincode </p>
+                            <input type="text" name="pincode" id="pincode" placeholder="Enter your Pincode">
+                        </label>
+                    </div>
+                </section>
+
+                <hr>
+
+                <!-- Identity Details Section -->
+                <h4> Other Details </h4>
+                <section class="identity-details">
+                    <div class="three-details-item">
+                        <label for="specialization">
+                            <p> Specialization </p>
+                            <input type="text" name="specialization" id="specialization" placeholder="Gynochologist etc.">
+                        </label>
+                        <label for="qualification">
+                            <p> Qualification </p>
+                            <input type="text" name="qualification" id="qualification"
+                                placeholder="MBBS, MS, MD, etc.">
+                        </label>
+                        <label for="experience">
+                            <p> Experience </p>
+                            <input type="text" name="experience" id="experience" placeholder="Enter your years of exp">
+                        </label>
+                    </div>
+                    <div class="three-details-item">
+                        <label for="reg_no">
+                            <p> Registration Number </p>
+                            <input type="text" name="reg_no" id="reg_no" placeholder="Enter registration number">
+                        </label>
+                        <label for="fee">
+                            <p> Fee </p>
+                            <input type="text" name="fee" id="fee" placeholder="Enter your consulting fee">
+                        </label>
+                        <label for="clinic">
+                            <p> Clinic/Hospital Name </p>
+                            <input type="text" name="clinic" id="clinic" placeholder="Enter your clinic Name">
+                        </label>
+                    </div>
+                </section>
+                <button type="submit" class="submit-btn"> Submit </button>
+            </form>
+        </section>
+    </section>
+</body>
+
+</html>
